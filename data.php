@@ -24,14 +24,22 @@
         }
     }
     elseif($_REQUEST['btn'] == "delete"){
-        echo("deleted");
-        // $sql = "INSERT INTO marksheet VALUES ('$en_no','$fname', '$lname','$toc','$wp','$dv');";
-        // if(mysqli_query($conn, "$sql")){
-        //     echo("Succesfully inserted");
-        // }
-        // else{
-        //     echo("ERROR: $sql <br> $conn->error");
-        // }
+        $sql = "DELETE FROM marksheet WHERE Enrollment_Number = '$en_no';";
+        if(mysqli_query($conn, "$sql")){
+            echo("Succesfully deleted");
+        }
+        else{
+            echo("ERROR: $sql <br> $conn->error");
+        }
+    }
+    elseif($_REQUEST['btn'] == "update"){
+        $sql = "UPDATE marksheet ;";
+        if(mysqli_query($conn, "$sql")){
+            echo("Succesfully deleted");
+        }
+        else{
+            echo("ERROR: $sql <br> $conn->error");
+        }
     }
     $conn->close();
 
