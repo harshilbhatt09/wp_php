@@ -1,0 +1,19 @@
+body {
+    margin: 15% auto 10% auto;
+}
+
+table {
+    margin: auto auto auto auto;
+    border: 1px solid black;
+    padding: 2px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
