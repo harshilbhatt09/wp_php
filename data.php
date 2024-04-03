@@ -33,9 +33,9 @@
         }
     }
     elseif($_REQUEST['btn'] == "update"){
-        $sql = "UPDATE marksheet ;";
+        $sql = "UPDATE marksheet SET First_Name = '$fname', Last_Name = '$lname', TOC = '$toc', WP = '$wp', DV = '$dv' WHERE Enrollment_Number = '$en_no';";
         if(mysqli_query($conn, "$sql")){
-            echo("Succesfully deleted");
+            echo("Succesfully updated");
         }
         else{
             echo("ERROR: $sql <br> $conn->error");
