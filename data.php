@@ -44,11 +44,15 @@
         if($toc != null){
             if($fname != null || $lname != null) 
         $sql=$sql.","; 
-            $sql = $sql."TOC = '$toc',";}
-        if($wp != null)
-            $sql = $sql."WP = '$wp',";
-        if($dv != null)
-            $sql = $sql."DV = '$dv',";
+            $sql = $sql."TOC = '$toc'";}
+        if($wp != null){
+            if($fname != null || $lname != null || $toc != null) 
+            $sql=$sql.","; 
+            $sql = $sql."WP = '$wp'";}
+        if($dv != null){
+            if($fname != null || $lname != null || $toc != null || $wp != null) 
+            $sql=$sql.",";
+            $sql = $sql."DV = '$dv'";}
         $sql = $sql." WHERE Enrollment_Number = '$en_no';";
         
         echo("$sql");

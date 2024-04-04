@@ -10,33 +10,38 @@
   <body>
     <h2>Marksheet Computer Engineering</h2>
     <div class="table" id="table">
-      </div>
       <table>
         <div class="form">
           <form action="data.php" method="post">
             <div class="en_no">
               <tr>
                 <td><label for="en_no">Enrollment Number: </label></td>
-                <td colspan="2"><input type="number" id="en_no" name="en_no" maxlength="12" /></td>
+                <td colspan="2">
+                  <input type="number" id="en_no" name="en_no" maxlength="12" />
+                </td>
               </tr>
             </div>
             <div class="fname">
               <tr>
                 <td><label for="fname">First Name: </label></td>
-                <td colspan="2"><input type="text" id="fname" name="fname" /></td>
+                <td colspan="2">
+                  <input type="text" id="fname" name="fname" />
+                </td>
               </tr>
             </div>
             <div class="lname">
               <tr>
                 <td><label for="lname">Last Name: </label></td>
-                <td colspan="2"><input type="text" id="lname" name="lname" /></td>
+                <td colspan="2">
+                  <input type="text" id="lname" name="lname" />
+                </td>
               </tr>
             </div>
             <div class="marks">
               <tr>
                 <td><label for="toc">TOC Marks: </label></td>
                 <td colspan="2">
-                  <input type="number" id="toc" name="toc" min="0" max="30"  />
+                  <input type="number" id="toc" name="toc" min="0" max="30" />
                 </td>
               </tr>
               <tr>
@@ -53,16 +58,21 @@
               </tr>
             </div>
             <div class="btn">
-                <tr>
-                    <td><button id="insert" name="btn" value="insert">Insert</button></td>
-                    <td><button id="update" name="btn" value="update">Update</button></td>
-                    <td><button id="delete" name="btn" value="delete">Delete</button></td>
-                </tr>
+              <tr>
+                <td>
+                  <button id="insert" name="btn" value="insert">Insert</button>
+                </td>
+                <td>
+                  <button id="update" name="btn" value="update">Update</button>
+                </td>
+                <td>
+                  <button id="delete" name="btn" value="delete">Delete</button>
+                </td>
+              </tr>
             </div>
           </form>
         </div>
       </table>
-
     </div>
   </body>
 </html>
